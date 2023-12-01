@@ -50,3 +50,42 @@ table {
 	border-spacing: 0;
 }
 
+/*----Importing fonts-----*/
+  @import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
+/*-----Color Varirables-----*/
+:root {
+    --yellow: #F6D64A;
+    --teal:#55BCD5;
+    --purple:#9B26B0
+    --blue: #499BD2
+    --dark-gray: #222222
+    --light-gray: #EAEAEA
+    --white: #FFFFFF
+    --black: #000000
+
+}
+
+/*-----Skiplink!-----*/
+#skip {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+/*Initializing fonts for certain tags*/
+h1, h2, h3 {
+    font-family: 'Molle', cursive;
+}
+
+h4, p, q, small, nav, button, form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
