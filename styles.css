@@ -57,12 +57,12 @@ table {
 :root {
     --yellow: #F6D64A;
     --teal:#55BCD5;
-    --purple:#9B26B0
-    --blue: #499BD2
-    --dark-gray: #222222
-    --light-gray: #EAEAEA
-    --white: #FFFFFF
-    --black: #000000
+    --purple:#9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
 
 }
 
@@ -81,16 +81,9 @@ h1, h2, h3 {
     font-family: 'Molle', cursive;
 }
 
+/*Specific header tags & misc. styling*/
 h4, p, q, small, nav, button, form {
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background-color: var(--white);
-}
-
-nav {
-    background-color: var(--teal);
 }
 
 /*Hamburger menu*/
@@ -213,6 +206,84 @@ nav {
     left: 0;
   }
 
+  /*-----BEGIN SMALL SCREEN CSS-----*/
+  header {
+    background-image: linear-gradient(var(--blue), var(--white))
+  }
+  body {
+    background-color: var(--white);
+    text-align: center;
+    margin: 0 auto;
+}
+
+h4 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+  nav {
+      background-color: var(--teal);
+  }
+
+  #plan {
+    background-color: var(--yellow);
+  }
+
+  #about {
+    background-color: var(--teal);
+  }
+
+  footer {
+    background-color: var(--light-gray);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main, footer {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  #img-grid 
+  {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  #plan {
+    display: grid;
+  }
+
+  #plan section {
+    align-items: center;
+    background-color: var(--teal);
+    padding: 1rem 1rem;
+  }
+
+  section {
+    margin: 1rem 1rem;
+  }
+
+  #testimonials {
+    display: grid;
+  }
+
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+ 
 
 
 
