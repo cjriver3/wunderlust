@@ -258,13 +258,56 @@ h4 {
   #about div {
     display: flex;
   }
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  fieldset label {
+    grid-row-start: 2;
+  }
+
+  input[type=submit] {
+    display: block;
+  }
 }
 
 /*-----Large sized screens-----*/
 @media screen and (min-width: 1000px) {
 
-    body {
-      background-color: green;
+    #intro {
+      display: grid;
+      grid-template: "heading images"
+                     "paragraph images"
+    }
+
+    #intro h2 {
+      grid-area: heading;
+    }
+
+    #intro p {
+      grid-area: paragraph;
+    }
+
+    #intro #img-grid {
+      grid-area: images;
+    }
+    
+    #plan div {
+      display: flex;
+      justify-content: center;
+    }
+
+    #testimonials div {
+      display: flex;
+      justify-content: center;
+    }
+    
+    #about div {
+      display: flex;
+      justify-content: center;
     }
 }
  
