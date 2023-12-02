@@ -280,9 +280,36 @@ h4 {
 
   #about {
     display: grid;
+  }
+
+  #about div {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
+  #about section {
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  .form-required {
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  #contact h3 {
+    text-align: left;
+
+  }
+  input, label, select, textarea{
+    display: block;
+    width: 90%;
+}
  
 
 
