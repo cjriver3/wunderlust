@@ -309,6 +309,11 @@ h4 {
       display: flex;
       justify-content: center;
     }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 }
  
 
